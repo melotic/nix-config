@@ -52,6 +52,8 @@
     microsoft-edge
     nodejs_20
     rustup
+    spotify
+    tmux
 
     # nix neovim pack
     alejandra
@@ -91,9 +93,11 @@
       };
     };
   };
+  programs.fish = {
+    enable = true;
+  };
   programs.starship = {
     enable = true;
-    enableFishIntegration = true;
   };
 
   # Nicely reload system units when changing configs
