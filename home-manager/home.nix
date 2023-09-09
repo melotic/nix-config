@@ -69,6 +69,12 @@
     userName = "Justin Perez";
     userEmail = "26028834+melotic@users.noreply.github.com";
     difftastic.enable = true;
+
+    extraConfig = {
+      commit.gpgSign = true;
+      gpg.format = "ssh";
+      user.signingkey = "/home/justin/.ssh/id_ed25519_sk.pub";
+    };
   };
   programs.alacritty = {
     enable = true;
