@@ -5,5 +5,6 @@
   ];
   pam.yubico.authorizedYubiKeys.ids = [
     # TODO: add ids
+    "vvcccbhrvbbj"
   ];
 }
