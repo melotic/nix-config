@@ -1,6 +1,6 @@
 { pkgs, config, ... }: {
   users.users.justin = {
-    isnormalUser = true;
+    isNormalUser = true;
     shell = pkgs.fish;
     extraGroups = [
       "wheel"
