@@ -24,7 +24,7 @@
     hostName = "wild-orca";
   };
 
-  services.xserver.videoDrives = [ "amdgpu" ];
+  services.xserver.videoDrivers = [ "amdgpu" ];
 
   system.stateVersion = "23.05";
 }
