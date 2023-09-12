@@ -1,5 +1,5 @@
 { pkgs, config, ... }: {
-  users.user.justin = {
+  users.users.justin = {
     isnormalUser = true;
     shell = pkgs.fish;
     extraGroups = [
