@@ -2,7 +2,7 @@
   imports = [
     ./fish.nix
     ./git.nix
-    ./tmux
+    ./tmux.nix
     ./ssh.nix
     ./starship.nix
     ./yubikey.nix
