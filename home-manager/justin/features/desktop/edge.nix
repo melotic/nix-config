@@ -1,5 +1,5 @@
 { pkgs, ... }: {
-  programs.microsoft-edge = {
-    enable = true;
-  };
+  home.packages = with pkgs; [
+    microsoft-edge
+  ];
 }

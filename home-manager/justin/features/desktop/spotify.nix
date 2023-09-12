@@ -1,5 +1,5 @@
 { pkgs, ... }: {
-  programs.spotify = {
-    enable = true;
-  };
+  home.packages = with pkgs; [
+    spotify
+  ];
 }

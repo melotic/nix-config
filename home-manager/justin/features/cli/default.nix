@@ -25,7 +25,7 @@
     bat = {
       enable = true;
     };
-    eza = {
+    exa = {
       enable = true;
       enableAliases = true;
     };

@@ -3,7 +3,7 @@
     ./global
 
     ./features/cli
-    ./features/desktop/common
+    ./features/desktop
   ];
   colorscheme = inputs.nix-colors.colorSchemes.nord;
 }
