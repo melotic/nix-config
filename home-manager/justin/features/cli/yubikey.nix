@@ -4,7 +4,7 @@
     yubikey-personalization
   ];
   pam.yubico.authorizedYubiKeys.ids = [
-    # TODO: add ids
     "vvcccbhrvbbj"
+    "cccccbgknufg"
   ];
 }
