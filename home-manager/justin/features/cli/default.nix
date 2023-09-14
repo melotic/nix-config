@@ -2,10 +2,11 @@
   imports = [
     ./fish.nix
     ./git.nix
-    ./tmux.nix
     ./ssh.nix
     ./starship.nix
+    ./tmux.nix
     ./yubikey.nix
+    ./zellij.nix
   ];
 
   home.packages = with pkgs; [

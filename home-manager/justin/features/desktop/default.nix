@@ -1,8 +1,8 @@
 { pkgs, ... }: {
   imports = [
-    ./font.nix
-    ./edge.nix
     ./alacritty.nix
+    ./edge.nix
+    ./font.nix
     ./spotify.nix
     ./vscode.nix
   ];
