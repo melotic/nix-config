@@ -2,6 +2,7 @@
   imports = [
     ./fish.nix
     ./git.nix
+    ./neovim.nix
     ./ssh.nix
     ./starship.nix
     ./tmux.nix
@@ -15,7 +16,6 @@
     ripgrep
     rustup
 
-    neovim
     # nix neovim pack
     alejandra
     deadnix
