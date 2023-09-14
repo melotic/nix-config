@@ -4,6 +4,7 @@
     ./edge.nix
     ./alacritty.nix
     ./spotify.nix
+    ./vscode.nix
   ];
 
   home.packages = with pkgs; [
