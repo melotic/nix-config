@@ -1,7 +1,7 @@
 { pkgs, ... }: {
   programs.zellij = {
     enable = true;
-    enableFishIntegration = true;
+    # enableFishIntegration = true;
 
     settings = {
       # default_layout = "compact";

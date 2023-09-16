@@ -21,6 +21,8 @@
     deadnix
     statix
     rnix-lsp
+
+    gcc
   ];
 
   programs = {
