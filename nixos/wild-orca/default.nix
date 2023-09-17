@@ -10,9 +10,9 @@
     ../common/users/justin.nix
 
     ../common/optional/dev.nix
-    ../common/optional/gnome.nix
-    ../common/optional/podman.nix
     ../common/optional/pipewire.nix
+    ../common/optional/podman.nix
+    ../common/optional/sway.nix
     ../common/optional/systemd-boot.nix
   ];
 
@@ -26,5 +26,5 @@
 
   services.xserver.videoDrivers = [ "amdgpu" ];
 
-  system.stateVersion = "23.05";
+  system.stateVersion = "23.11";
 }

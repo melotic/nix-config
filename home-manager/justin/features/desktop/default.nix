@@ -3,6 +3,8 @@
     ./alacritty.nix
     ./edge.nix
     ./font.nix
+    ./sway.nix
+    ./mako.nix
     ./spotify.nix
     ./vscode.nix
   ];
