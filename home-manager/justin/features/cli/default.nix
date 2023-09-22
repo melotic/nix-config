@@ -14,7 +14,17 @@
     bitwarden-cli
     deploy-rs
     ripgrep
-    rustup
+    lazygit
+
+    # rust
+    rustc
+    cargo
+    rustfmt
+    rust-analyzer
+    clippy
+    bacon
+
+    tokei
 
     # nix neovim pack
     alejandra
