@@ -6,5 +6,5 @@
     ./features/desktop
     ./features/pentest
   ];
-  colorscheme = inputs.nix-colors.colorSchemes.nord;
+  colorScheme = inputs.nix-colors.colorSchemes.onedark;
 }
