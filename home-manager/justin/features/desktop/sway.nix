@@ -34,7 +34,7 @@ in
       output = {
         "DP-2" = {
           mode = "2560x1440@165.070Hz";
-          position = "1920,-100";
+          position = "1920,0";
         };
         "HDMI-A-1" = {
           mode = "1920x1080@75.402Hz";
@@ -124,6 +124,18 @@ in
           };
         }
       ];
+      # keybindings = rec {
+      #   "XF86AudioLowerVolume" = "exec pactl set-sink-volume @DEFAULT_SINK@ -5%";
+      #   "XF86AudioMicMute" = "exec pactl set-source-mute @DEFAULT_SOURCE@ toggle";
+      #   "XF86AudioMute" = "exec pactl set-sink-mute @DEFAULT_SINK@ toggle";
+      #   "XF86AudioNext" = "exec playerctl next";
+      #   "XF86AudioPlay" = "exec playerctl play-pause";
+      #   "XF86AudioPrev" = "exec playerctl previous";
+      #   "XF86AudioRaiseVolume" = "exec pactl set-sink-volume @DEFAULT_SINK@ +5%";
+      #   "XF86AudioStop" = "exec playerctl stop";
+      #   "XF86MonBrightnessDown" = "exec brightnessctl set 10%-";
+      #   "XF86MonBrightnessUp" = "exec brightnessctl set +10%";
+      # };
     };
   };
 
