@@ -17,12 +17,10 @@
     lazygit
 
     # rust
-    rustc
-    cargo
-    rustfmt
-    rust-analyzer
-    clippy
+    rustup
     bacon
+    grcov
+    cargo-llvm-cov
 
     tokei
 
