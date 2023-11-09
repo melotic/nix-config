@@ -35,10 +35,12 @@ in
         "DP-2" = {
           mode = "2560x1440@165.070Hz";
           position = "1920,0";
+          bg = "/home/justin/.config/sway/bg.jpg stretch";
         };
         "HDMI-A-1" = {
           mode = "1920x1080@75.402Hz";
           position = "0,0";
+          bg = "/home/justin/.config/sway/bg.jpg stretch";
         };
       };
       # set colors

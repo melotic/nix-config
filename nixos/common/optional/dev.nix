@@ -11,4 +11,8 @@
       nix-ld
     ]
     ++ (with nodePackages_latest; [ npm pnpm yarn ]);
+
+  environment.sessionVariables = {
+    DOTNET_ROOT = "${pkgs.dotnet-sdk}";
+  };
 }

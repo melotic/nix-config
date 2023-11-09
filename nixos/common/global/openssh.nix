@@ -9,6 +9,4 @@
       };
     };
   };
-
-  programs.ssh.startAgent = true;
 }

@@ -21,6 +21,7 @@
     bacon
     grcov
     cargo-llvm-cov
+    cargo-watch
 
     tokei
 
@@ -29,8 +30,20 @@
     deadnix
     statix
     rnix-lsp
+    prettierd
+
+    luajitPackages.luarocks
+
+    azure-cli
+    azure-static-sites-client
+    azure-functions-core-tools
+
+    just
 
     gcc
+    musl
+
+    terraform
   ];
 
   programs = {
