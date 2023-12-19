@@ -6,7 +6,7 @@
     ];
   };
   console.keyMap = lib.mkDefault "us";
-  time.timeZone = lib.mkDefault "America/Los_Angeles";
+  time.timeZone = lib.mkDefault "America/Chicago";
 
   environment.systemPackages = with pkgs; [
     icu
