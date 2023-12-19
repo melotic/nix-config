@@ -35,7 +35,6 @@
     luajitPackages.luarocks
 
     azure-cli
-    azure-static-sites-client
     azure-functions-core-tools
 
     just
