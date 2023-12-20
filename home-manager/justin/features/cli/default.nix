@@ -44,6 +44,8 @@
     musl
 
     terraform
+
+    hugo
   ];
 
   programs = {
