@@ -15,7 +15,7 @@
       amend = "commit -a --amend";
     };
     signing = {
-      key = "key::sk-ssh-ed25519@openssh.com AAAAGnNrLXNzaC1lZDI1NTE5QG9wZW5zc2guY29tAAAAIPt78gAOaxaF0mboPlJZK/Lec5TjGERYOwN3WZpPj0jwAAAABHNzaDo=";
+      key = "3B041C53";
       signByDefault = true;
     };
     difftastic = {
@@ -40,7 +40,7 @@
         signOff = true;
       };
       gpg = {
-        format = "ssh";
+        format = "openpgp";
       };
       init = {
         defaultBranch = "main";

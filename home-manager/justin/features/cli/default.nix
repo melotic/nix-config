@@ -3,6 +3,7 @@
     ./fish.nix
     ./git.nix
     ./neovim.nix
+    ./pgp.nix
     ./ssh.nix
     ./starship.nix
     ./tmux.nix

@@ -30,5 +30,9 @@
     functions = {
       fish_greeting = "";
     };
+
+    interactiveShellInit = ''
+      set -x SSH_AUTH_SOCK (gpgconf --list-dirs agent-ssh-socket)
+    '';
   };
 }
