@@ -17,12 +17,17 @@
     # TODO: Add any other flake you might need
     hardware.url = "github:nixos/nixos-hardware";
 
+    deploy-rs = {
+      url = "github:serokell/deploy-rs";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     # Shameless plug: looking for a way to nixify your themes and make
     # everything match nicely? Try nix-colors!
     nix-colors.url = "github:misterio77/nix-colors";
   };
 
-  outputs = { self, nixpkgs, home-manager, ... }@inputs:
+  outputs = { self, nixpkgs, home-manager, deploy-rs, ... }@inputs:
     let
       inherit (self) outputs;
       forAllSystems = nixpkgs.lib.genAttrs [
@@ -66,6 +71,13 @@
             ./nixos/wild-orca/default.nix
           ];
         };
+
+        trinity = nixpkgs.lib.nixosSystem {
+          specialArgs = { inherit inputs outputs; };
+          modules = [
+            ./nixos/trinity/default.nix
+          ];
+        };
       };
 
       # Standalone home-manager configuration entrypoint
@@ -79,6 +91,39 @@
             ./home-manager/justin/wild-orca.nix
           ];
         };
+
+        # ryzen nuc
+        "justin@trinity" = home-manager.lib.homeManagerConfiguration {
+          pkgs = nixpkgs.legacyPackages.x86_64-linux; # Home-manager requires 'pkgs' instance
+          extraSpecialArgs = { inherit inputs outputs; };
+          modules = [
+            ./home-manager/justin/trinity.nix
+          ];
+        };
+      };
+
+      deploy = {
+        fastConnection = true;
+        magicRollback = false;
+        sshOpts = [ "-t" ];
+        nodes = {
+          trinity = {
+            hostname = "trinity.tail88eb4.ts.net";
+
+            profiles = {
+              system = {
+                user = "root";
+                path = deploy-rs.lib.x86_64-linux.activate.nixos self.nixosConfigurations.trinity;
+              };
+              home = {
+                user = "justin";
+                path = deploy-rs.lib.x86_64-linux.activate.home-manager self.homeConfigurations."justin@trinity";
+              };
+            };
+          };
+        };
+
+        deployChecks = { };
       };
     };
 }
