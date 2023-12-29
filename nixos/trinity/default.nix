@@ -3,11 +3,9 @@
     ./hardware-configuration.nix
 
     ../common/global
+    ../common/optional/systemd-boot.nix
     ../common/users/justin.nix
   ];
-
-  boot.loader.systemd-boot.enable = true;
-  boot.loader.efi.canTouchEfiVariables = true;
 
   networking = {
     hostName = "trinity";
