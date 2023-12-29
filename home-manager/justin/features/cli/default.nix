@@ -32,6 +32,7 @@
     statix
     rnix-lsp
     prettierd
+    marksman
 
     luajitPackages.luarocks
 

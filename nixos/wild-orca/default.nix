@@ -14,6 +14,7 @@
     ../common/optional/podman.nix
     ../common/optional/sway.nix
     ../common/optional/systemd-boot.nix
+    ../common/optional/wireshark.nix
   ];
 
   boot.initrd.secrets = {
