@@ -63,5 +63,8 @@
     jq = {
       enable = true;
     };
+    direnv = {
+      enable = true;
+    };
   };
 }

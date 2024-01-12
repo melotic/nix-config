@@ -5,6 +5,9 @@
     ../common/global
     ../common/optional/systemd-boot.nix
     ../common/users/justin.nix
+    ../common/optional/podman.nix
+
+    ./services
   ];
 
   networking = {
