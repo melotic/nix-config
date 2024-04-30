@@ -3,6 +3,7 @@
     ./alacritty.nix
     ./edge.nix
     ./font.nix
+    ./hyprland.nix
     ./sway.nix
     ./mako.nix
     ./spotify.nix

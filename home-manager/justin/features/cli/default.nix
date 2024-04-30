@@ -21,6 +21,7 @@
     rustup
     bacon
     grcov
+    cargo-asm
     cargo-llvm-cov
     cargo-watch
 
